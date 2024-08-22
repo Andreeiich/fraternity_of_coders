@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Стать партнером</title>
+  </head>
+  <body>
+    <div class="main_container">
+    <div class="modal modal-1">
+      <div class="modal-window">
+        <form action="">
+        <div class="modal-header">
+          <h3>Стать партнером проекта</h3>
+        </div>
+        <div class="modal-body">
+          <div class="contacts_image">
+            <div class="contacts">
+            
+              <div class="nameOfCompany">
+              <input type="text" required placeholder="АВЦ" name="nameOfCompany_client"/>
+              <p class="overlay-text"><span class="red_star">✱</span> Название организации</p>
+              </div>
+              <div class="telephone">
+              <input type="tel" required placeholder="+7 933 848-34-33" pattern="\+?[0-9\s\-\(\)]+" name="telephone_client"/>
+              <p class="overlay-text"><span class="red_star">✱</span> Телефон</p>
+            </div>
+            <div class="email">
+              <input type="email" required placeholder=" avc@gmail.com" name="email_client"/>
+              <p class="overlay-text"><span class="red_star">✱</span> E-mail</p>
+            </div>
+
+            </div>
+            <div class="image-info">
+            <div class="logo">
+              <p><span class="red_star">✱</span> Логотип (jpeg, png)</p>
+            </div>
+            <div class="image-container" >
+              <img class="upload_image" src="img/Vector (2).png" alt="upload" />
+              <img class="ellipse" src="img/Ellipse 353.png" alt="ellipse" />
+              <img class="close" src="img/Icon.png" alt="close" />
+              <img class="avatar" src="img/Ellipse 44.png" alt="Изображение" />
+              
+              <div class="choose_file">
+                <input type="file" accept="image/jpeg, image/png" id="file_input" name="file_input_client" hidden>
+                <label for="file_input" class="choose_file_input">Выберите файл</label>            
+              </div>
+            
+            </div>
+          </div>
+          </div>
+            <div class="additionally_info"> 
+
+          <div class="direction">
+          <select class="select_main" name="Направление" required name="select_client">
+            <option value="ecology">Экология</option>
+            <option value="health">Здравоохранение</option>
+            <option value="auto's business">Автомобильный бизнес</option>
+          </select>
+          <p class="select_text"><span class="red_star">✱</span> Направление</p>
+        </div>
+          
+          <input type="text"  placeholder="avc.ru" class="ethernet" required name="ethernet_client"/>
+          <input type="text"  placeholder="vk.com/shans" class="vk" required name="vk_client" />
+          <input type="text"  placeholder="ok.com/shans" class="classmates" required name="classmates_client"/>    
+          <input type="text"  placeholder="facebook.com/shans" class="facebook" required name="facebook_client" />
+          <input type="text"  placeholder="instagram.com/shans" class="instagram" required name="instagram_client"/>
+         
+          <input type="text"  placeholder=" youtube.com/shans"  class="youtube" required name="youtube_client"/>
+           <div class="boss"> 
+          <input type="text"  placeholder="Александров Иван Васильевич"   pattern="^[А-Яа-яЁё\s]+$" required name="boss_client"/>
+            
+          <p class="boss_tag">Руководитель</p>
+        </div> 
+        </div>
+      </div>
+      <div class="button_space">
+        <button class="btn_partner" id="btn_partner_client" type="submit">Стать партнером проекта</button>
+        <button class="btn_cancel" id="btn_cancel_client" onclick="hideModalWindow()">Отменить</button>
+      </div>
+    </form>
+      </div>
+    </div>
+
+    <div id="requirements"><h5>Требования к заявке</h5></div>
+    <div id="opportunity"><h5>Возможность приобрести навыки</h5></div>
+    <button class="btn" onclick="showModalWindow()">Написать</button>
+    <section>
+      <h6>Публичные выступления</h6>
+      <div class="container">
+        <div class="first_performance">
+          <div class="item_performance">Можно с детьми</div>
+          <div class="item_performance_disability">
+            Для людей с инвалидностью
+          </div>
+          <div class="item_performance_disability">
+            Для людей с инвалидностью
+          </div>
+        </div>
+        <div class="second_performance">
+          <div class="item_performance">Можно с детьми</div>
+          <div class="item_performance">Можно с детьми</div>
+          <div class="item_performance">Можно с детьми</div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
