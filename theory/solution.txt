@@ -19,6 +19,21 @@ for (let i = 0; i < arr.length; i++) {
 }
  </script>
 
+Вывод в одну строку 
+
+const arr = [10, 12, 15, 21];
+let results = [];
+
+for (let i = 0; i < arr.length; i++) {
+  setTimeout(function(i) {
+    results.push(arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`);
+    if (results.length === arr.length) {
+      console.log(results.join(', '));
+    }
+  }, 3000, i);
+}
+     </script>
+
 
 2.Использовать (IIFE - Immediately Invoked Function Expression)  немедленно вызываемое функциональное выражение для захвата значения i на каждой итерации:
 
@@ -30,10 +45,25 @@ for (let i = 0; i < arr.length; i++) {
      setTimeout(function() {
       console.log(arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`);
      }, 3000);
-   })(i);
+   })(i);}
 
 </script>
 
+
+Вывод в одну строку:
+
+
+const arr = [10, 12, 15, 21];
+ let results = [];
+ for (var i = 0; i < arr.length; i++) {
+   (function(i) {
+     setTimeout(function() {
+      results.push(arr[i] > 13 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`);
+    if (results.length === arr.length) {
+      console.log(results.join(', '));
+    }
+     }, 3000);
+   })(i);}
 
 
 
